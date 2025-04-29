@@ -5,8 +5,11 @@ from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import Pinecone
 import json
 import os
+from dotenv import load_dotenv
 
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
+load_dotenv() 
+
+pinecone_api_key = os.getenv("PINECONE_API_cKEY")
 openai_api_key = os.getenv("OPENAI_API_KEY")
 pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
 
