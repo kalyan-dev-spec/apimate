@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: react_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./frontend:/app
+    restart: always
+
+  backend:
+    build: ./backend
+    container_name: flask_backend
+    ports:
+      - "5050:5050"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://dev:dev@db:5432/api_registration
+    restart: always
+
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: api_registration
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pg_data:

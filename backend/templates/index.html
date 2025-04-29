@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Analysis</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+            display: block;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GitHub Repository Analysis</h1>
+    <p>Enter the GitHub owner and repository name to analyze.</p>
+
+    <label for="owner">GitHub Owner:</label>
+    <input type="text" id="owner" placeholder="Enter GitHub owner..." required />
+
+    <label for="repo">Repository Name:</label>
+    <input type="text" id="repo" placeholder="Enter repository name..." required />
+
+    <label for="path">Path (Optional):</label>
+    <input type="text" id="path" placeholder="Enter path (optional)..." />
+
+    <button id="analyzeBtn">Analyze Repository</button>
+
+    <h2>Results:</h2>
+    <div id="results">
+        <pre id="output">Waiting for analysis...</pre>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#analyzeBtn").click(function(){
+                var owner = $("#owner").val().trim();
+                var repo = $("#repo").val().trim();
+                var path = $("#path").val().trim();
+
+                if (owner === "" || repo === "") {
+                    alert("Please enter both the GitHub owner and repository name.");
+                    return;
+                }
+
+                $("#output").text("Analyzing... Please wait.");
+
+                $.ajax({
+                    url: "/analyze",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify({"owner": owner, "repo": repo, "path": path}),
+                    success: function(response) {
+                        $("#output").text(JSON.stringify(response, null, 2)); // Pretty print JSON
+                    },
+                    error: function(xhr, status, error) {
+                        $("#output").text("Error: " + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

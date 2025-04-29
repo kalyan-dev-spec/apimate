@@ -1,0 +1,13 @@
+Flask
+flask-cors
+psycopg2-binary
+sqlalchemy
+requests
+Flask-SQLAlchemy
+Flask-Session
+Flask-Cors
+openai
+pinecone
+langchain
+langchain-community
+tiktoken
