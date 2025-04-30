@@ -29,7 +29,7 @@ APIMate is a cloud-deployable platform that enables intelligent discovery, regis
 
 ## 🏗️ System Architecture Overview
 
-![System Architecture]([https://raw.githubusercontent.com/khajifaizanali-dev/apimate/main/docs/system_architecture.png](https://github.com/khajifaizanali-dev/apimate/blob/main/system-arch.png)
+![System Architecture](https://github.com/khajifaizanali-dev/apimate/blob/main/system-arch.png)
 
 ---
 
@@ -40,7 +40,7 @@ APIMate is a cloud-deployable platform that enables intelligent discovery, regis
 - **PostgreSQL** – Stores structured API metadata  
 - **Pinecone** – Semantic vector database for API embeddings
 
-![Deployment Architecture]([https://raw.githubusercontent.com/khajifaizanali-dev/apimate/main/docs/deployment_architecture.png](https://github.com/khajifaizanali-dev/apimate/blob/main/deploy-arch.png))
+![Deployment Architecture](https://github.com/khajifaizanali-dev/apimate/blob/main/deploy-arch.png)
 
 ---
 
