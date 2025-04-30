@@ -29,7 +29,7 @@ APIMate is a cloud-deployable platform that enables intelligent discovery, regis
 
 ## 🏗️ System Architecture Overview
 
-![System Architecture](https://raw.githubusercontent.com/khajifaizanali-dev/apimate/main/docs/system_architecture.png)
+![System Architecture]([https://raw.githubusercontent.com/khajifaizanali-dev/apimate/main/docs/system_architecture.png](https://github.com/khajifaizanali-dev/apimate/blob/main/system-arch.png)
 
 ---
 
@@ -40,7 +40,7 @@ APIMate is a cloud-deployable platform that enables intelligent discovery, regis
 - **PostgreSQL** – Stores structured API metadata  
 - **Pinecone** – Semantic vector database for API embeddings
 
-![Deployment Architecture](https://raw.githubusercontent.com/khajifaizanali-dev/apimate/main/docs/deployment_architecture.png)
+![Deployment Architecture]([https://raw.githubusercontent.com/khajifaizanali-dev/apimate/main/docs/deployment_architecture.png](https://github.com/khajifaizanali-dev/apimate/blob/main/deploy-arch.png))
 
 ---
 
@@ -54,6 +54,18 @@ APIMate is a cloud-deployable platform that enables intelligent discovery, regis
 git clone https://github.com/khajifaizanali-dev/apimate.git
 cd apimate
 ```
+### 2. Create a `.env` file
+
+Before running the application, create a `.env` file in the root directory and add the following environment variables using **your own API keys**:
+
+```env
+PINECONE_API_KEY=your_pinecone_api_key
+OPENAI_API_KEY=your_openai_api_key
+PINECONE_INDEX_NAME=your_pinecone_index_name
+GITHUB_TOKEN=your_github_token
+```
+⚠️ Important: Do not commit your .env file to version control. Add it to .gitignore to keep your credentials safe.
+
 ### 2. Start all services
 
 ```bash
@@ -61,7 +73,7 @@ docker-compose up
 ```
 Once the containers are up and running, the app will be accessible at:
 
-👉 http://localhost:5050
+👉 http://localhost:3000
 
 ⸻
 
