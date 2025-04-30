@@ -82,26 +82,6 @@ Once the containers are up and running, the app will be accessible at:
 To validate system performance, a suite of GPT-generated APIs across domains (weather, AI, logistics, e-commerce, etc.) was created and manually registered. These help simulate real-world conditions for retrieval, summarization, and search functionality.
 
 ⸻
-
-## 📊 Results
-
-- ✅ **Top-3 Semantic Search Accuracy**: >95%
-
-- ⏱️ **Fast Real-Time API Interaction** via RAG
-
-- 🔁 **Unified Discovery Experience** for both auto- and manually-registered APIs
-
-⸻
-## 🌱 Future Enhancements
-
-- 📉 Real-time API health monitoring
-
-- ⚡ Faster LLM inference and caching
-
-- 📖 Open-sourcing modules with better docs and modular configs
-
-- 🧑‍💻 Enhanced UI/UX for developers
-- 
 ⸻
 
 ## 🔗 Links
