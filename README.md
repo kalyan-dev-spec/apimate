@@ -71,25 +71,31 @@ To validate system performance, a suite of GPT-generated APIs across domains (we
 
 ⸻
 
-📊 Results
-	•	✅ Top-3 Semantic Search Accuracy: >95%
-	•	⏱️ Fast Real-Time API Interaction via RAG
-	•	🔁 Unified Discovery Experience for both auto- and manually-registered APIs
+## 📊 Results
+
+- ✅ **Top-3 Semantic Search Accuracy**: >95%
+
+- ⏱️ **Fast Real-Time API Interaction** via RAG
+
+- 🔁 **Unified Discovery Experience** for both auto- and manually-registered APIs
 
 ⸻
+## 🌱 Future Enhancements
 
-🌱 Future Enhancements
-	•	📉 Real-time API health monitoring
-	•	⚡ Faster LLM inference and caching
-	•	📖 Open-sourcing modules with better docs and modular configs
-	•	🧑‍💻 Enhanced UI/UX for developers
+- 📉 Real-time API health monitoring
 
+- ⚡ Faster LLM inference and caching
+
+- 📖 Open-sourcing modules with better docs and modular configs
+
+- 🧑‍💻 Enhanced UI/UX for developers
 ⸻
 
-🔗 Links
-	•	🔍 Live Demo: http://18.118.208.242:5050
-	•	💻 GitHub Repo: https://github.com/khajifaizanali-dev/apimate
+## 🔗 Links
 
+- 🔍 **Live Demo**: [http://18.118.208.242:5050](http://18.118.208.242:5050)
+
+- 💻 **GitHub Repo**: [https://github.com/khajifaizanali-dev/apimate](https://github.com/khajifaizanali-dev/apimate)
 ⸻
 
 📝 License
