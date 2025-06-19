@@ -87,8 +87,6 @@ To validate system performance, a suite of GPT-generated APIs across domains (we
 ## 🔗 Links
 
 - 🔍 **Live Demo**: [http://18.118.208.242:5050](http://18.118.208.242:5050)
-
-- 💻 **GitHub Repo**: [https://github.com/khajifaizanali-dev/apimate](https://github.com/khajifaizanali-dev/apimate)
   
 ⸻
 
